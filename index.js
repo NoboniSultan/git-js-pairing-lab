@@ -110,3 +110,31 @@ function triangleArea(base, height) {
 
 console.log(triangleArea(5, 7));  // 17.5
 console.log(triangleArea(6, 8));  // 24
+
+// 9. Write a function `betweenTwentyAndFourty` that takes in a number parameter and checks whether a given integer is within 20 to 40. It **returns** `true` if it is and `false` if not.
+// ```
+// betweenTwentyAndFourty(20)      //return false
+// betweenTwentyAndFourty(21)     //return true
+// betweenTwentyAndFourty(39)     //return true
+// betweenTwentyAndFourty(40)    //return false
+// ```
+
+function betweenTwentyAndFourty(num) {
+    return num > 20 && num < 40;
+}
+
+
+
+
+
+
+// 10. Write a function `largest` that takes in three number parameters and **returns** the largest of the values.
+// ```
+// largest(4, 6, 8)        //returns 8
+// largest(30, 22, 17)     //returns 30
+// largest(41, 108, 86)    //returns 108
+
+
+function largest(a, b, c) {
+    return Math.max(a, b, c);
+}
