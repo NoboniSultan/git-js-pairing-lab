@@ -123,11 +123,6 @@ function betweenTwentyAndFourty(num) {
     return num > 20 && num < 40;
 }
 
-
-
-
-
-
 // 10. Write a function `largest` that takes in three number parameters and **returns** the largest of the values.
 // ```
 // largest(4, 6, 8)        //returns 8
@@ -138,3 +133,4 @@ function betweenTwentyAndFourty(num) {
 function largest(a, b, c) {
     return Math.max(a, b, c);
 }
+
