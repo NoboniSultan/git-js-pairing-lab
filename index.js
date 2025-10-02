@@ -169,3 +169,52 @@ function getExtention(filename) {
     if (dotIndex === -1) return "";
     return filename.substring(dotIndex);
 }
+// 14. Write a function `absoluteNineteen` to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
+function absoluteNineteen(num) {
+    let diff = Math.abs(num - 19);
+    if (num > 19) {
+        return diff * 3;
+    }
+    return diff;
+}
+
+// Examples:
+console.log(absoluteNineteen(20)); // 3
+console.log(absoluteNineteen(25)); // 18
+console.log(absoluteNineteen(10)); // 9
+
+// 15. Write a function `switchLetters` that creates a new string from a given string changing the position of first and last characters. 
+// ```
+// switchLetters("anne")         //return "enna"
+// switchLetters("hello world")  //return "dello worlh"
+// switchLetters("a")            //return "a"
+// switchLetters("")             //return ""
+// ```
+function switchLetters(str) {
+    if (str.length <= 1) return str;
+    return str[str.length - 1] + str.slice(1, -1) + str[0];
+}
+
+// Examples:
+console.log(switchLetters("anne"));        // "enna"
+console.log(switchLetters("hello world")); // "dello worlh"
+console.log(switchLetters("a"));           // "a"
+console.log(switchLetters(""));            // ""
+
+// 16. Write a function `changeString` to replace every character in a given string with the character following it in the alphabet/
+// ```
+// changeString("abc")             //return "bcd"
+// changeString("helloworld")      //return "ifmmpxpsme"
+// ```
+function changeString(str) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        result += String.fromCharCode(str.charCodeAt(i) + 1);
+    }
+    return result;
+}
+
+// Examples:
+console.log(changeString("abc"));        // "bcd"
+console.log(changeString("helloworld")); // "ifmmpxpsme"
+
